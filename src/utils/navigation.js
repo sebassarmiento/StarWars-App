@@ -7,14 +7,14 @@ class Navigation extends Component {
     return (
 
       <div>
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark text-warning">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-warning">
           <a className="navbar-brand mb-0 h1">
             <img src={Saber} style={{ height: 30, marginRight: 10 }} alt="" />Star wars
         </a>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/" >Home</NavLink>
+                  <NavLink className="nav-link" to="/" exact >Home</NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/personajes" >Personajes</NavLink>

@@ -1,3 +1,9 @@
 body{
   background: rgb(155, 153, 153);
+  font-family: Starjedi;
+}
+
+@font-face{
+  font-family: 'Starjedi';
+  src: local('Starjedi'), url('./fonts/Starjedi.ttf') format('truetype');
 }
