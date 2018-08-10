@@ -6,7 +6,7 @@ class Home extends Component {
       console.log('Soy el Home'),
 
       <div style={{ paddingTop: 400 , textAlign: 'center'}} >
-      <h1 style={{fontSize: 200}} >STAR WARS</h1>  
+      <h1 style={{fontSize: 200, fontFamily: 'Starjedi', color: 'white' }} >STAR WARS</h1>  
       </div>
 
           );

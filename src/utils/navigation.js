@@ -8,7 +8,7 @@ class Navigation extends Component {
 
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-warning">
-          <a className="navbar-brand mb-0 h1">
+          <a className="navbar-brand mb-0 h1 star">
             <img src={Saber} style={{ height: 30, marginRight: 10 }} alt="" />Star wars
         </a>
             <div className="collapse navbar-collapse" id="navbarNav">

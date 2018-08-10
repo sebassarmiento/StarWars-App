@@ -73,7 +73,7 @@ class Personajes extends Component {
   render() {
     return (
 
-      <div>
+      <div className="m-5 p-5" >
         <table className="table table-dark">
           <thead>
             <tr>

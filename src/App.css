@@ -1,9 +1,33 @@
+html{
+  cursor: url('./img/lightsaber-cursor.png'), auto;
+}
+
 body{
-  background: rgb(155, 153, 153);
+  background: url('./img/starWarsVertical.jpg') center top;
+  background-size: 100%;
+}
+
+.star{
   font-family: Starjedi;
 }
 
 @font-face{
   font-family: 'Starjedi';
   src: local('Starjedi'), url('./fonts/Starjedi.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+  width: 28px;
+  background: linear-gradient(left,  #d2ff52 0%,#8fce3b 51%,#8fce3b 51%,#8fce3b 51%,#d2ff52 100%);
+}
+
+::-webkit-scrollbar-track-piece  {
+  display:none;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background:transparent url('./img/scrollbar.png') no-repeat;
+  background-size:370%; 
+  height: 301px;
+  background-position:center center;
 }

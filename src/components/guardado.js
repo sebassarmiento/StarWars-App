@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { genderTranslate, eyeColorTranslate } from '../utils/translate';
 
 class Guardado extends Component {
   constructor(){
@@ -41,7 +42,7 @@ class Guardado extends Component {
   render() {
     return (
 
-      <div>
+      <div className="m-5 p-5" >
       <table className="table table-dark">
         <thead>
           <tr>
@@ -51,7 +52,7 @@ class Guardado extends Component {
             <th scope="col">Altura</th>
             <th scope="col">Peso</th>
             <th scope="col">Color de ojos</th>
-            <th scope="col">Guardar</th>
+            <th scope="col">Eliminar</th>
           </tr>
         </thead>
         <tbody id="tableBody">
@@ -64,10 +65,10 @@ class Guardado extends Component {
                 <tr key={data.url} >
                   <td>{this.number} </td>
                   <td> {data.name} </td>
-                  <td> {data.gender} </td>
-                  <td> {data.height} </td>
-                  <td>  {data.mass} </td>
-                  <td> {data.eye_color} </td>
+                  <td> {genderTranslate(data.gender)} </td>
+                  <td> {data.height !== 'unknown' ? data.height + ' cm' : data.height } </td>
+                  <td>  {data.mass !== 'unknown' ? data.mass + ' kg' : data.masss } </td>
+                  <td> {eyeColorTranslate(data.eye_color)} </td>
                   <td> <button className="btn btn-danger" onClick={() => this.removeLocal(data)} >Eliminar</button></td>
                 </tr>
               )
