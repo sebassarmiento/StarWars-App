@@ -60,7 +60,7 @@ class Guardado extends Component {
           {
             this.state.data ? (this.number = 0, this.state.data.map(data => {
               return (
-                console.log(data),
+                
                 this.number++ ,
                 <tr key={data.url} >
                   <td>{this.number} </td>

@@ -27,10 +27,6 @@ class Navigation extends Component {
                 </li>
               </ul>
             </div>
-            <form className="form-inline">
-              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search" />
-                <a href="#/search"><button className="btn btn-warning my-2 my-sm-0" type="button" id="searchButton">Buscar</button></a>
-          </form>
       </nav>
         </div>
 
